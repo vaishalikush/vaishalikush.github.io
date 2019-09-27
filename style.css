@@ -1,0 +1,158 @@
+header {
+    background-color: #3c76c2;
+    position: fixed;
+    height: 50px;
+    width: 730px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+}
+nav {
+    background-color: black;
+    grid-column: 1 / 5;
+    height: 20px;
+    margin-top: 50px;
+    width: 730px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    font-weight: bold;
+}
+
+button{
+  margin-top: 10px;
+  background-color: #3c76c2;
+  border: none;
+  padding: none;
+}
+
+.logo {
+  background-color: #006699;
+  background-image: url(//web.archive.org/web/20011201215901im_/http://www.ibm.com/i/v11/m/en/lines.gif);
+  background-repeat: repeat;
+  width: 150px;
+}
+.menu {
+  color: white;
+}
+.country {
+  background-color: black;
+  font-weight: bold;
+}
+.sectors{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.people{
+}
+a.highlight{
+  text-decoration: none;
+  color: #ffcc00;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+}
+a.highlight:hover{
+  text-decoration: underline;
+}
+a.mainlink {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 10px;
+
+}
+a.mainlink:hover {
+    text-decoration: underline;
+}
+
+a.sidelink {
+  text-decoration: none;
+  color: black;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+}
+a.sidelink:hover {
+    text-decoration: underline;
+}
+
+a.sidelink2 {
+  text-decoration: none;
+  color: #006699;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+a.newslink {
+  font-size: 10px;
+  color: #006699;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+section {
+    background-color: #6699cc;
+    font-size: 12px;
+    width:150px;
+}
+
+
+article {
+    background-color: white;
+    font-size: 12px;
+    font-weight: bold;
+    grid-template-columns: 4fr 3fr;
+    display: grid;
+}
+
+.blackbreak{
+  background-color: black;
+  height: 10px;
+}
+
+.bluebreak{
+  margin-top: 10px;
+  background-color: #6699cc;
+  height: 10px;
+}
+
+.content{
+  float:left;
+}
+
+.news {
+  padding-left: 10px;
+  padding-bottom: 13px;
+}
+.news#img{
+  padding: 2px;
+}
+.news#a{
+  padding:2px;
+}
+
+.side{
+  float:right;
+  display: grid;
+  color: black;
+}
+
+td{
+  font-size: 10px;
+  color: #006699;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-weight: bold;
+}
+
+div#content {
+    width: 730px;
+    display: grid;
+    font-family: Verdana, Arial, sans-serif;
+}
