@@ -1,6 +1,5 @@
 header {
     background-color: #3c76c2;
-    position: fixed;
     height: 50px;
     width: 730px;
     display: grid;
@@ -10,7 +9,6 @@ nav {
     background-color: black;
     grid-column: 1 / 5;
     height: 20px;
-    margin-top: 50px;
     width: 730px;
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -152,7 +150,9 @@ footer {
 }
 
 div#content {
+
     width: 730px;
     display: grid;
     font-family: Verdana, Arial, sans-serif;
+
 }
