@@ -1,0 +1,48 @@
+<html>
+<head>
+    <link rel="stylesheet" href="xkcd_style.css">
+</head>
+<script src="password.js"></script>
+
+
+<body>
+    <main>
+        <h1>XKCD Password Generator</h1>
+        <div>
+            <label for="minword">Minimum word length: </label>
+            <input type="range" min="1" max="11" id="minword" oninput="updateSlider();">
+            <span id="min"></span>
+        </div>
+        <div>
+            <label for="maxword">Maximum word length: </label>
+            <input type="range" min="1" max="11" id="maxword" oninput="updateSlider();">
+            <span id="max"></span>
+        </div>
+        <br>
+        <div>
+            <label for="maxpwlen">Maximum password length: </label>
+            <input type="text" id="maxpwlen" oninput="calculateTotal(this)">
+        </div>
+
+        <br>
+        <div>
+            <label for="numsubs">Number substitutions: </label>
+            <input type="checkbox" id="numsubs" value="substitutions">  <br/>
+        </div>
+        <br>
+        <div>
+            <label for="easytype">Easy typing: </label>
+            <input type="checkbox" id="easytype" value="typing"> <br />
+        </div>
+        <br>
+        
+        <button onclick="generatePasswordTable()">Generate Passwords</button>
+        <br><br>
+    </main>
+    <table id="passwordtable">
+    </table>
+
+
+</body>
+
+</html>
