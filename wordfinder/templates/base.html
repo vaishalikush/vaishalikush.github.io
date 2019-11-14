@@ -2,9 +2,12 @@
 
 <head>
     <link rel="stylesheet" href="/static/wordstyle.css">
+    <!-- <script src="/static/script.js" type="text/javascript"></script> -->
+    
 </head>
 
 <body>
+
     {% block navbar %}
     <nav>
         <h1>Word List Program for {{name}}</h1>
@@ -13,6 +16,16 @@
 
     {% block content %}
     default content
+    {% endblock %}
+
+
+    <script src="{{ url_for('static',filename='script.js') }}"></script>
+
+    
+    {% block footer %}
+    <footer> 
+        <a href="https://github.com/vaishalikush/vaishalikush.github.io/tree/master/wordfinder">GitHub Repo</a>
+    </footer>
     {% endblock %}
 </body>
 

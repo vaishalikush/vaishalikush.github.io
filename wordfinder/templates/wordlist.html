@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<main>
+    
+    {% for word in wordlist: %}
+    <div class="wordbox">
+        {{ word }}
+
+        <button class="openmodal myBtn">{{ word }}</button>
+
+        <div class="modal myModal">
+        
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>DEFINITIONS</h1>
+                <ul id="{{ word }}">
+                    {% for def in definitions %}
+                    <ul>{{def["shortdef"][0]}}</ul>
+                    {% endfor %}
+                </ul>
+            </div>
+        
+        </div>
+
+    </div>
+    {% endfor %}
+
+    
+    
+
+</main>
+{% endblock %}
